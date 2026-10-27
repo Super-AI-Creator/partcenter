@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f3f0e8;
+  --foreground: #141b24;
+  --navy: #081424;
+  --paper: #f3f0e8;
+  --ink: #141b24;
+  --muted: #3e4856;
+  --line: #ddd4c4;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-navy: #081424;
+  --color-navy-2: #122743;
+  --color-navy-3: #1b365d;
+  --color-paper: #f3f0e8;
+  --color-paper-2: #e7e1d4;
+  --color-card: #fbf9f4;
+  --color-ink: #141b24;
+  --color-muted: #3e4856;
+  --color-line: #ddd4c4;
+  --color-teal: #0f6e68;
+  --color-teal-2: #d7f3ef;
+  --color-blue: #2457c5;
+  --color-danger: #8a2e2e;
+  --font-sans: var(--font-outfit), "Segoe UI", sans-serif;
+  --font-serif: var(--font-fraunces), Georgia, serif;
+}
+
+html {
+  color-scheme: light;
+  background: var(--paper);
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #0f6e68;
+  color: #f7fffd;
+}
+
+:focus-visible {
+  outline: 2px solid #2457c5;
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 80;
+  border-radius: 999px;
+  background: white;
+  color: #081424;
+  padding: 0.6rem 1rem;
+}
+
+.skip-link:focus {
+  top: 0.75rem;
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+
+.reveal-off {
+  opacity: 0;
+  transform: translateY(14px);
+}
+
+.reveal-on {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.legal h2 {
+  margin-top: 2.75rem;
+  font-family: var(--font-serif);
+  font-size: 1.7rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: #081424;
+}
+
+.legal p,
+.legal li {
+  margin-top: 0.85rem;
+  line-height: 1.7;
+  color: #243040;
+}
+
+.legal ul {
+  margin-top: 0.85rem;
+  padding-left: 1.2rem;
+  list-style: disc;
+}
+
+.legal a {
+  color: #0f6e68;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-off,
+  .reveal-on {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
