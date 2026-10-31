@@ -46,7 +46,7 @@ export const teamMembers: TeamMember[] = [
     name: "Owen Clarke",
     role: "Civil coordination",
     focus: "Drawing production and site coordination for the engineer who will sign.",
-    portrait: "/images/team/mat.png",
+    portrait: "/images/team/owen-clarke.jpg",
     portraitAlt: "Portrait of Owen Clarke.",
   },
   {
@@ -60,7 +60,7 @@ export const teamMembers: TeamMember[] = [
     name: "Andre Blake",
     role: "Project coordination",
     focus: "Scopes, client updates, and the written split of who owns each part.",
-    portrait: "/images/team/mw.png",
+    portrait: "/images/team/andre-blake.jpg",
     portraitAlt: "Portrait of Andre Blake.",
   },
 ];
