@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { industryNav, office, officeQuery, site } from "@/lib/site";
+import { industryNav, office, officeQuery, site, whatsapp } from "@/lib/site";
 
 export function SiteFooter() {
   return (
@@ -13,6 +13,13 @@ export function SiteFooter() {
             {office.street}
             <br />
             {office.city}, {office.region} {office.postalCode}
+          </p>
+          <p className="mt-4 text-sm leading-relaxed text-white/75">
+            <a href={whatsapp.href} className="hover:text-white" target="_blank" rel="noopener noreferrer">
+              WhatsApp
+              <br />
+              {whatsapp.display}
+            </a>
           </p>
         </div>
         <div>

@@ -18,6 +18,11 @@ export const office = {
   postalCode: "22201",
 };
 
+export const whatsapp = {
+  display: "+1 (629) 341-6242",
+  href: "https://wa.me/16293416242",
+};
+
 export function officeQuery() {
   return `${office.street}, ${office.city}, ${office.region} ${office.postalCode}`;
 }
