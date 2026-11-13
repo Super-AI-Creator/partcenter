@@ -50,6 +50,13 @@ export const teamMembers: TeamMember[] = [
     portraitAlt: "Portrait of Owen Clarke.",
   },
   {
+    name: "Bill James",
+    role: "Architect",
+    focus: "Building design, drawings, and coordination with the engineer who will sign.",
+    portrait: "/images/team/bill-james.png",
+    portraitAlt: "Portrait of Bill James.",
+  },
+  {
     name: "Maya Ellison",
     role: "Accounting",
     focus: "Close checklists, reconciliations, and reports a reviewer can trace.",
